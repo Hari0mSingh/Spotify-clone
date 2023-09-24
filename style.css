@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Varela+Round&display=swap');
+
+body{
+    background-color: #bfbebe;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    height: 60px;
+    background: #000;
+    color: white;
+    align-items: center;
+}
+nav ul li {
+    padding: 0 12px;
+}
+.brand img{
+    width: 48px;
+    padding: 0 8px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.container{
+    min-height: 67vh;
+    background-color: #000;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    width: 70%;
+    margin: 23px auto;
+    border-radius: 14px;
+    padding: 30px;
+    background-image: url(bg1.jpg);
+    background-repeat:no-repeat ;
+    background-position-x: right;
+    box-shadow: 2px 2px 25px gray;
+}
+.bottom{
+    position: sticky;
+    height: 130px;
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.icons{
+    margin-top: 20px;
+}
+.icons i {
+    cursor: pointer;
+}
+#myProgressBar{
+    width: 80vw;
+}
