@@ -8,13 +8,13 @@ let myProgressBar = document.getElementById('myProgressBar');
 let gif = document.getElementById('gif');
 
 let song = [
-    {songname: "Salam-e-Ishq", filePath: "1.mp3", coverPath: "1.jpg"},
-    {songname: "Salam-e-Ishq", filePath: "2.mp3", coverPath: "2.jpg"},
-    {songname: "Salam-e-Ishq", filePath: "3.mp3", coverPath: "3.jpg"},
-    {songname: "Salam-e-Ishq", filePath: "4.mp3", coverPath: "4.jpg"},
-    {songname: "Salam-e-Ishq", filePath: "5.mp3", coverPath: "5.jpg"},
-    {songname: "Salam-e-Ishq", filePath: "6.mp3", coverPath: "6.jpg"},
-    {songname: "Salam-e-Ishq", filePath: "7.mp3", coverPath: "7.jpg"}
+    {songname: "Ram Siya Ram", filePath: "1.mp3", coverPath: "1.jpg"},
+    {songname: "Tere Vaste", filePath: "2.mp3", coverPath: "2.jpg"},
+    {songname: "Mann Bharryaa", filePath: "3.mp3", coverPath: "3.jpg"},
+    {songname: "Heeriye", filePath: "4.mp3", coverPath: "4.jpg"},
+    {songname: "Anyway", filePath: "5.mp3", coverPath: "5.jpg"},
+    {songname: "Meri Ja", filePath: "6.mp3", coverPath: "6.jpg"},
+    {songname: "Tum Tum", filePath: "7.mp3", coverPath: "7.jpg"}
 ];
 
 // audioElement.play();
@@ -43,4 +43,10 @@ audioElement.addEventListener('timeupdate', ()=>{
 
 myProgressBar.addEventListener('change', ()=>{
     audioElement.currentTime = myProgressBar.value*audioElement.duration/100;
+})
+
+Array.from(document.getElementsByClassName('songItemPlay')).forEach((Element)=>{
+    Element.addEventListener('click', (e)=>{
+        console.log(e);
+    })
 })
